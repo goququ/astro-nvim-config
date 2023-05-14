@@ -1,5 +1,10 @@
 local config = {
-	-- colorscheme = "tokyonight",
+  colorscheme = "dracula",
+  lsp = {
+    formatting = {
+      timeout_ms = 10000,
+    },
+  },
 }
 
 return config
