@@ -1,6 +1,6 @@
-### [ Emample user configuration ](https://github.com/AstroNvim/user_example)
+### [ Example user configuration ](https://github.com/AstroNvim/user_example)
 
-## Installation 
+## Installation
 
 ```bash
 echo "export XDG_CONFIG_HOME=$HOME/.config" >> ~/.zshrc && \
