@@ -3,4 +3,5 @@ return {
 		spell = true,
 		spelllang = "ru,en",
 	},
+	g = {},
 }
