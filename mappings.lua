@@ -2,7 +2,7 @@ return {
 	n = {
 		["J"] = { "mzJ`z", desc = "" },
 		["n"] = { "nzzzv", desc = "Next match centered" },
-		["N"] = { "Nzzzv", desc = "Prev match cnetered" },
+		["N"] = { "Nzzzv", desc = "Prev match centered" },
 	},
 	i = {
 		["<C-s>"] = { "<Esc><cmd>w!<cr>", desc = "Force write" },
@@ -17,5 +17,8 @@ return {
 	},
 	x = {
 		["<C-s>"] = { "<Esc><cmd>w!<cr>", desc = "Force write" },
+	},
+	t = {
+		["<esc>"] = { [[<C-\><C-n>]], desc = "Change terminal mode to normal" },
 	},
 }
