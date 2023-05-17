@@ -17,6 +17,7 @@ return {
 			})
 		end,
 	},
+	{ "editorconfig/editorconfig-vim", event = "VeryLazy" },
 	{
 		"tpope/vim-surround",
 		event = "VeryLazy",
