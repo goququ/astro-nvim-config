@@ -35,7 +35,7 @@ return {
 		["<C-s>"] = { "<Esc><cmd>w!<cr>", desc = "Force write" },
 	},
 	t = {
-		["<esc>"] = { [[<C-\><C-n>]], desc = "Change terminal mode to normal" },
+		["<C-n>"] = { [[<C-\><C-n>]], desc = "Change terminal mode to normal" },
 		["<C-`>"] = { "<cmd>ToggleTerm direction=horizontal size=14<cr>", desc = "Toggle terminal" },
 		["+"] = {
 			addTerminal,
