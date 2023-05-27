@@ -6,8 +6,17 @@ local function addTerminal()
 	vim.api.nvim_command(command)
 end
 
+local function consoleLog()
+	local variable = vim.fn.expand("<cword>")
+	local file_type = vim.bo.filetype
+	if file_type == "typescript" or file_type == "typescriptreact" then
+		vim.cmd("normal! oconsole.log('LOG: " .. variable .. "', " .. variable .. ")")
+	end
+end
+
 return {
 	n = {
+		["<C-S-L>"] = { consoleLog, desc = "Console log some variable" },
 		["J"] = { "mzJ`z", desc = "" },
 		["n"] = { "nzzzv", desc = "Next match centered" },
 		["N"] = { "Nzzzv", desc = "Prev match centered" },
@@ -19,10 +28,12 @@ return {
 		},
 	},
 	i = {
+		["<C-S-L>"] = { consoleLog, desc = "Console log some variable" },
 		["<C-s>"] = { "<Esc><cmd>w!<cr>", desc = "Force write" },
 		["<C-c>"] = { "<cmd>close<cr>", desc = "Just close command" },
 	},
 	v = {
+		["<C-S-L>"] = { consoleLog, desc = "Console log some variable" },
 		["<C-s>"] = { "<Esc><cmd>w!<cr>", desc = "Force write" },
 		["J"] = { ":m '>+1<CR>gv=gv", desc = "Move line bottom" },
 		["K"] = { ":m '<-2<CR>gv=gv", desc = "Move line top" },

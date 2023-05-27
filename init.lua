@@ -6,7 +6,7 @@ local config = {
 		},
 	},
 	polish = function()
-		vim.api.nvim_command("SessionManager load_current_dir_session")
+		-- vim.api.nvim_command("SessionManager load_current_dir_session")
 	end,
 }
 

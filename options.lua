@@ -1,7 +1,7 @@
 return {
 	opt = {
-		spell = true,
-		spelllang = "ru,en",
+		-- spell = true,
+		-- spelllang = "ru,en",
 	},
 	g = {},
 }
