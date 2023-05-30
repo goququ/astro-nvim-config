@@ -26,6 +26,7 @@ return {
 			addTerminal,
 			desc = "Add terminal",
 		},
+		["<leader>fp"] = { "<CMD>Telescope projects<CR>", desc = "Find projects" },
 	},
 	i = {
 		["<C-S-L>"] = { consoleLog, desc = "Console log some variable" },

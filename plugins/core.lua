@@ -35,6 +35,14 @@ return {
 			}) -- load snippets paths
 		end,
 	},
+	{
+		"ahmedkhalf/project.nvim",
+		config = function()
+			require("project_nvim").setup({
+				patterns = { ".git", "package.json" },
+			})
+		end,
+	},
 	-- {
 	-- 	"mattn/emmet-vim",
 	-- 	fevent = "VeryLazy",
