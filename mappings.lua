@@ -27,6 +27,7 @@ return {
 			desc = "Add terminal",
 		},
 		["<leader>fp"] = { "<CMD>Telescope projects<CR>", desc = "Find projects" },
+		["<C-a>"] = { "ggVG", desc = "Select entire file" },
 	},
 	i = {
 		["<C-S-L>"] = { consoleLog, desc = "Console log some variable" },
@@ -34,6 +35,7 @@ return {
 		["<C-c>"] = { "<cmd>close<cr>", desc = "Just close command" },
 	},
 	v = {
+		["<C-a>"] = { "ggVG", desc = "Select entire file" },
 		["<C-S-L>"] = { consoleLog, desc = "Console log some variable" },
 		["<C-s>"] = { "<Esc><cmd>w!<cr>", desc = "Force write" },
 		["J"] = { ":m '>+1<CR>gv=gv", desc = "Move line bottom" },
