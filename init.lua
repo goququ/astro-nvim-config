@@ -11,8 +11,12 @@ local config = {
 			graphql = function()
 				return {
 					cmd = { "graphql-lsp", "server", "-m", "stream" },
-					filetypes = { "graphql" },
-					root_dir = require("lspconfig").util.root_pattern(".git"),
+					filetypes = { "graphql", "typescriptreact", "typescript", "javascript", "javascriptreact" },
+					root_dir = require("lspconfig").util.root_pattern(
+						".graphqlrc*",
+						".graphql.config.*",
+						"graphql.config.*"
+					),
 				}
 			end,
 		},
