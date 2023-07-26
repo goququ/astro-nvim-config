@@ -7,24 +7,30 @@
       "interface ${TM_FILENAME_BASE}Props {}",
       "",
       "export const $TM_FILENAME_BASE = (props: ${TM_FILENAME_BASE}Props) => {",
-      " return <>$1</>",
+      " return <div>$1</div>",
       "}"
     ],
     "description": "Default functional component"
   },
   "Default callback": {
     "prefix": "cb",
-    "body": ["useCallback(() => {$1}, [$2])"],
+    "body": [
+      "useCallback(() => {$1}, [$2])"
+    ],
     "description": "Default callback"
   },
   "Export default": {
     "prefix": "ed",
-    "body": ["export {default} from '$1'"],
+    "body": [
+      "export {default} from '$1'"
+    ],
     "description": "Export default"
   },
   "Export all": {
     "prefix": "ea",
-    "body": ["export * from '$1'"],
+    "body": [
+      "export * from '$1'"
+    ],
     "description": "Export all"
   }
 }

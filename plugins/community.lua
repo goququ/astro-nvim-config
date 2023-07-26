@@ -5,7 +5,7 @@ return {
 	-- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
 	{ import = "astrocommunity.colorscheme.dracula-nvim" },
-	{ import = "astrocommunity.editing-support.todo-comments-nvim.todo-comments-nvim" },
+	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
 	{ import = "astrocommunity.editing-support.nvim-ts-rainbow" },
 	{ import = "astrocommunity.pack.typescript" },
 	{ import = "astrocommunity.pack.yaml" },
