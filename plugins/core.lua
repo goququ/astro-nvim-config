@@ -44,20 +44,28 @@ return {
 			}) -- load snippets paths
 		end,
 	},
-	{
-		"ahmedkhalf/project.nvim",
-		config = function()
-			require("project_nvim").setup({
-				patterns = { ".git" },
-			})
-		end,
-	},
 	{ "ethanholz/nvim-lastplace", event = "VeryLazy" },
 	{
 		"ray-x/lsp_signature.nvim",
 		event = "BufRead",
 		config = function()
 			require("lsp_signature").on_attach()
+		end,
+	},
+	{
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
+		config = function()
+			-- Change '<C-g>' here to any keycode you like.
+			vim.keymap.set("i", "<C-u>", function()
+				return vim.fn["codeium#Accept"]()
+			end, { expr = true })
+			vim.keymap.set("i", "<C-;>", function()
+				return vim.fn["codeium#CycleCompletions"](1)
+			end, { expr = true })
+			vim.keymap.set("i", "<c-,>", function()
+				return vim.fn["codeium#CycleCompletions"](-1)
+			end, { expr = true })
 		end,
 	},
 	-- {

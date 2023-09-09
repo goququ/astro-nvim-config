@@ -22,7 +22,7 @@ local config = {
 		},
 	},
 	polish = function()
-		require("telescope").load_extension("projects")
+		-- require("telescope").load_extension("projects")
 
 		vim.api.nvim_command("SessionManager load_current_dir_session")
 	end,

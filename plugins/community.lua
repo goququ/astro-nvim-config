@@ -6,7 +6,6 @@ return {
 
 	{ import = "astrocommunity.colorscheme.dracula-nvim" },
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
-	{ import = "astrocommunity.editing-support.nvim-ts-rainbow" },
 	{ import = "astrocommunity.pack.typescript" },
 	{ import = "astrocommunity.pack.yaml" },
 	{ import = "astrocommunity.pack.markdown" },
@@ -14,5 +13,5 @@ return {
 	{ import = "astrocommunity.pack.docker" },
 	{ import = "astrocommunity.pack.bash" },
 	{ import = "astrocommunity.pack.go" },
-	{ import = "astrocommunity.pack.tailwindcss" },
+	-- { import = "astrocommunity.pack.tailwindcss" },
 }
