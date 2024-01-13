@@ -17,7 +17,7 @@ end
 return {
 	n = {
 		["<leader>xl"] = { consoleLog, desc = "Console log some variable" },
-		["J"] = { "mzJ`z", desc = "" },
+		-- ["J"] = { "mzJ`z", desc = "" },
 		["n"] = { "nzzzv", desc = "Next match centered" },
 		["N"] = { "Nzzzv", desc = "Prev match centered" },
 		["<C-c>"] = { "<cmd>close<cr>", desc = "Just close command" },
@@ -26,7 +26,6 @@ return {
 			addTerminal,
 			desc = "Add terminal",
 		},
-		["<leader>fp"] = { "<CMD>Telescope projects<CR>", desc = "Find projects" },
 		["<leader>xa"] = { "ggVG", desc = "Select entire file" },
 	},
 	i = {
@@ -41,11 +40,11 @@ return {
 		["K"] = { ":m '<-2<CR>gv=gv", desc = "Move line top" },
 		["<C-d>"] = { "<C-d>zz", desc = "" },
 		["<C-u>"] = { "<C-u>zz", desc = "" },
-		["p"] = { [["_dP]], desc = "Enhance paste" },
 		["<C-c>"] = { "<cmd>close<cr>", desc = "Just close command" },
 	},
 	x = {
 		["<C-s>"] = { "<Esc><cmd>w!<cr>", desc = "Force write" },
+		["p"] = { [["_dP]], desc = "Enhance paste" },
 	},
 	t = {
 		["<C-n>"] = { [[<C-\><C-n>]], desc = "Change terminal mode to normal" },
