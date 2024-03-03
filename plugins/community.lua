@@ -13,5 +13,5 @@ return {
 	{ import = "astrocommunity.pack.docker" },
 	{ import = "astrocommunity.pack.bash" },
 	{ import = "astrocommunity.pack.go" },
-	-- { import = "astrocommunity.pack.tailwindcss" },
+	{ import = "astrocommunity.pack.tailwindcss" },
 }
