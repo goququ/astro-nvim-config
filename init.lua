@@ -6,6 +6,7 @@ local config = {
 		},
 		servers = {
 			"graphql",
+			"astro",
 		},
 		config = {
 			graphql = function()
@@ -16,6 +17,21 @@ local config = {
 						".graphqlrc*",
 						".graphql.config.*",
 						"graphql.config.*"
+					),
+				}
+			end,
+			astro = function()
+				return {
+					filetypes = { "astro" },
+					cmd = { "astro-ls", "--stdio" },
+					init_options = {
+						typescript = {},
+					},
+					root_dir = require("lspconfig").util.root_pattern(
+						"package.json",
+						"tsconfig.json",
+						"jsconfig.json",
+						".git"
 					),
 				}
 			end,
