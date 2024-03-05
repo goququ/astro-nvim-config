@@ -12,6 +12,9 @@ local function consoleLog()
 	if file_type == "typescript" or file_type == "typescriptreact" then
 		vim.cmd("normal! oconsole.log('LOG: " .. variable .. "', " .. variable .. ")")
 	end
+	if file_type == "go" then
+		vim.cmd('normal! ofmt.Printf("\\n-----\\nLOG: %v\\n-----\\n", ' .. variable .. ")")
+	end
 end
 
 return {
@@ -27,6 +30,7 @@ return {
 			desc = "Add terminal",
 		},
 		["<leader>xa"] = { "ggVG", desc = "Select entire file" },
+		["<C-a>"] = { "ggVG", desc = "Select entire file" },
 	},
 	i = {
 		["<C-s>"] = { "<Esc><cmd>w!<cr>", desc = "Force write" },
